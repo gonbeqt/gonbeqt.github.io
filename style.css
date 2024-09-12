@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+header, .personal-details, .profile-summary, .education, .skills, footer {
+    opacity: 0;
+    animation: fadeIn ease-in-out 1s forwards;
+    animation-delay: 0.3s;
+}
+
+header {
+    animation-delay: 0.3s;
+}
+
+.personal-details {
+    animation-delay: 0.6s;
+}
+
+.profile-summary {
+    animation-delay: 0.9s;
+}
+
+.education {
+    animation-delay: 1.2s;
+}
+
+.skills {
+    animation-delay: 1.5s;
+}
+
+footer {
+    animation-delay: 1.8s;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+
+i.fas.fa-envelope, i.fab.fa-github, i.fab.fa-linkedin {
+    margin-right: 5px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
